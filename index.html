@@ -194,9 +194,10 @@
         }
         
         .hero-image {
-            flex: 1;
-            text-align: center;
-        }
+    flex: 1;
+    text-align: center;
+    margin-top: 40px; /* ini yang bikin foto turun */
+}
         
         .hero-image img {
             max-width: 100%;
@@ -218,9 +219,10 @@
         }
         
         .social-links {
-            display: flex;
-            margin-top: 30px;
-        }
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* tambah jarak ke atas */
+}
         
         .social-links a {
             display: flex;
@@ -241,6 +243,14 @@
             color: white;
             transform: translateY(-5px);
         }
+        .hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
         
         /* About Section */
         .about-content {
@@ -421,7 +431,7 @@
         .footer-content p {
             color: rgba(255, 255, 255, 0.7);
         }
-        
+
         /* Responsif */
         @media (max-width: 992px) {
             .hero-content, .about-content, .contact-container {
@@ -429,9 +439,8 @@
             }
             
             .hero-content {
-                padding-right: 0;
-                margin-bottom: 50px;
-            }
+    text-align: center;
+}
             
             h1 {
                 font-size: 2.5rem;
@@ -476,6 +485,7 @@
             .filter-btn {
                 margin-bottom: 10px;
             }
+        
         }
     </style>
 </head>
@@ -512,8 +522,10 @@
                 <p>Saya seorang Mahasiswa sekaliguas Web Developer & Desainer. Saya berspesialisasi dalam HTML, CSS, JavaScript, dan framework front-end.</p>
                 </center>
                 
-                <a href="#portfolio" class="btn">Lihat Portfolio</a>
-                <a href="https://wa.me/6281348385122" class="btn btn-accent">Hubungi Saya</a>
+                <div class="hero-buttons">
+    <a href="#portfolio" class="btn">Lihat Portfolio</a>
+    <a href="https://wa.me/6281348385122" class="btn btn-accent">Hubungi Saya</a>
+</div>
                 
                 <div class="social-links">
                     <a href="https://wa.me/6287764806732">
